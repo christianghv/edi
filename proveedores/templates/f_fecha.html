@@ -1,0 +1,11 @@
+                <div class="col-lg-2">
+                   <div class="form-group">
+                   		<label>{label}</label>
+                        <input class="form-control" placeholder="" id="{id}" name="{id}" value="{valor}" title="{title}" {requerido} {place}>
+                    </div>
+                </div>
+				<script>
+					$(function() {
+						$( "#{id}" ).datepicker({dateFormat:"dd/mm/yy"}).datepicker();
+					})
+				</script>
