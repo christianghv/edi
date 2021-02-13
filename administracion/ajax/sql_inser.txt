@@ -1,0 +1,27 @@
+
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('','0000000000','',,'','d41d8cd98f00b204e9800998ecf8427e')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('','0000000000','',,'','d41d8cd98f00b204e9800998ecf8427e')
+ ERRORINSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')
+ INSERT INTO cfg_Proveedores(id_proveedor,cod_sap,nombre,tipo_entrada,tipo_salida,pass) 
+		VALUES('345678','0005645645','sdfsdfds',1,'','d9729feb74992cc3482b350163a1a010')   Resource id #5
