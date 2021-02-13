@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<?
+include_once("SegAjax.php");
+session_start();
+if (!isset($_SESSION["id_embarcador"])){
+    header('Location:index.php');
+}
+?>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EDI 2.0</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="js/proveedores.js"></script>
+        <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="color-fondo">
+            <div class="header-container interno">
+                <header class="clearfix header-grey">
+                    <h1 class="title"><img src="img/edi-2-logo.png" width="100" alt="Edi 2.0"></h1>
+                    <h2 class="kc-chile"><img src="img/kc_chile-log-s.png" alt="KC Chile"></h2>
+                </header>
+            </div>
+
+            <div class="main-container">
+                <div class="main clearfix">
+
+                    <article class="interno">
+                        <header>
+                            <img src="img/interior-menu.png" alt="embarcadores">
+                            <h1>Internos</h1>
+                        </header>
+                        <footer><h2><a href="logout.php" id="volver"><img src="img/volver-menu.png" alt="volver">SALIR</a></h2></footer>
+                    </article>
+                    <article class="contenido scroll">
+                        <div class="oc">
+                            <img src="img/oc.png" alt="OC"/>
+                            <h1><a href="embarcadores/descargarOC850.php" id="descargar_oc">DESCARGAR<br /><span>OC 850</span></a></h1>
+                        </div>
+                        <div class="division"></div>
+						<div class="oc">
+                            <img src="img/oc.png" alt="OC"/>
+                            <h1><a href="embarcadores/descargarOC856.php" id="descargar_oc">DESCARGAR<br /><span>OC 856</span></a></h1>
+                        </div>
+						<div class="division"></div>
+						<div class="oc">
+                            <img src="img/oc.png" alt="OC"/>
+                            <h1><a href="embarcadores/carga_manual.php" id="carga_manual">INGRESAR DATOS<br /><span>CARGA MANUAL</span></a></h1>
+                        </div>
+                    </article>
+                </div> <!-- #main -->
+            </div> <!-- #main-container -->
+
+            <div class="footer-container">
+                <footer>
+                    <img src="img/powered.png" alt="OytSolutions">
+                </footer>
+            </div>
+
+
+            <script src="js/main.js"></script>
+
+            <script src="js/jquery.mCustomScrollbar.min.js"></script>
+            <script>
+                (function($){
+                    $(window).load(function(){
+                        $(".scroll").mCustomScrollbar({
+                            set_width:false, /*optional element width: boolean, pixels, percentage*/
+                            set_height:false, /*optional element height: boolean, pixels, percentage*/
+                            horizontalScroll:false, /*scroll horizontally: boolean*/
+                            scrollInertia:950, /*scrolling inertia: integer (milliseconds)*/
+                            mouseWheel:true, /*mousewheel support: boolean*/
+                            mouseWheelPixels:"auto", /*mousewheel pixels amount: integer, "auto"*/
+                            autoDraggerLength:true, /*auto-adjust scrollbar dragger length: boolean*/
+                            autoHideScrollbar:false, /*auto-hide scrollbar when idle*/
+                            scrollButtons:{ /*scroll buttons*/
+                                enable:false, /*scroll buttons support: boolean*/
+                                scrollType:"continuous", /*scroll buttons scrolling type: "continuous", "pixels"*/
+                                scrollSpeed:"auto", /*scroll buttons continuous scrolling speed: integer, "auto"*/
+                                scrollAmount:40 /*scroll buttons pixels scroll amount: integer (pixels)*/
+                            },
+                            advanced:{
+                                updateOnBrowserResize:true, /*update scrollbars on browser resize (for layouts based on percentages): boolean*/
+                                updateOnContentResize:true, /*auto-update scrollbars on content resize (for dynamic content): boolean*/
+                                autoExpandHorizontalScroll:false, /*auto-expand width for horizontal scrolling: boolean*/
+                                autoScrollOnFocus:true, /*auto-scroll on focused elements: boolean*/
+                                normalizeMouseWheelDelta:false /*normalize mouse-wheel delta (-1/1)*/
+                            },
+                            contentTouchScroll:true, /*scrolling by touch-swipe content: boolean*/
+                            theme:"light" /*"light", "dark", "light-2", "dark-2", "light-thick", "dark-thick", "light-thin", "dark-thin"*/
+                        });
+                    });
+                })(jQuery);
+            </script>
+
+            <!--<script>
+                var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src='//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+            </script>-->
+        </div>
+    </body>
+</html>
