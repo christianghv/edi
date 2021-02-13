@@ -1,0 +1,5 @@
+IP: 52.89.228.174
+Port: 22
+Username: sftp_user
+Identity file: attached
+Folder with permissions: pub_in & pub_out
