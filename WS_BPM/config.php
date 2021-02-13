@@ -1,0 +1,7 @@
+<?
+DEFINE("SERVERAD","172.21.5.110");
+DEFINE("DOMINIO","adprueba.cl");
+DEFINE("SERVERDU","172.24.0.40");
+DEFINE("KEY1","a29tYXRzdQ==");
+DEFINE("KEY2","b3l0c29sdXRpb25z");
+?>
